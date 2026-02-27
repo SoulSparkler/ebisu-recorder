@@ -3,8 +3,9 @@ nixPkgs = ["python312", "nodejs_22"]
 
 [phases.install]
 cmds = [
+  "python3 -m venv /opt/venv",
   "pip install -r requirements.txt",
-  "cd chainlink && npm install --omit=dev"
+  "npm --prefix chainlink install --omit=dev"
 ]
 
 [start]
