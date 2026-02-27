@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ["python312", "nodejs_22"]
+
+[phases.install]
+cmds = [
+  "pip install -r requirements.txt",
+  "cd chainlink && npm install --omit=dev"
+]
+
+[start]
+cmd = "python dash.py"

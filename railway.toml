@@ -1,0 +1,7 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "python dash.py"
+restartPolicyType = "always"
+restartPolicyMaxRetries = 10

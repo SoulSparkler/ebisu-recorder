@@ -1,0 +1,9 @@
+{
+  "name": "chainlink-feed",
+  "version": "1.0.0",
+  "description": "Chainlink BTC/USD price feed via Polymarket RTDS",
+  "main": "btc-feed.js",
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
